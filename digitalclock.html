@@ -1,0 +1,94 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital-Clock</title>
+  
+</head>
+<style>
+    * {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    }
+    section {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(https://itsdigitalclocks.netlify.app/morning.avif);
+    background-size: cover;
+    
+}
+.digitalclock {
+    text-align: center;
+    font-size: 50px;
+    margin-bottom: 50px;
+    text-transform: uppercase;
+}
+.clock {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.clockbox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.timetext {
+    height: 80px;
+    width: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(102, 0, 255, 0.566);
+    color: white;
+    font-size: 40px;
+    font-weight: 600;
+}
+
+.time {
+    width: 100px;
+    padding: 10px;
+    font-size: 16px;
+    background-color: rgba(6, 2, 111, 0.804);
+    color: white;
+    text-transform: uppercase;
+    text-align: center;
+}
+</style>
+
+<body>
+    <section>
+        <div class="digitalclock">
+            <h1>Digital Clock</h1>
+            <div class="clock">
+                <div class="clockbox">
+                    <span class="timetext" id="hour"></span>
+                    <span class="time">Hours</span>
+                </div>
+                <div class="clockbox">
+                    <span class="timetext" id="minutes"></span>
+                    <span class="time">minutes</span>
+                </div>
+                <div class="clockbox">
+                    <span class="timetext" id="second"></span>
+                    <span class="time">second</span>
+                </div>
+                <div class="clockbox">
+                    <span class="time" id="ampm"></span>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="./digitalclock.js"></script>
+</body>
+
+</html>
